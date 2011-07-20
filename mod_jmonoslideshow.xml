@@ -45,6 +45,14 @@
 	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow/. If does not exist - default is used from " description=""/>
 	  	
 	    </fieldset>
+	    <fieldset name="Advanced" label="Advanced Parameters">
+			<field name="cache" type="list" default="0" label="Caching" description="Module Caching">
+				<option value="0">No caching</option>
+				<option value="1">Use global</option>
+			</field>
+			<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+			<field name="admin_modified" type="hidden" default="1" />
+		</fieldset>
 	  </fields>
 	</config>
 </extension>
