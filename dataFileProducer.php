@@ -34,13 +34,13 @@ $imagePathInsert = " imagePath=\"$dir\" ";
 
 $strToAdd = '';
 
-print_r($imageUrls);
+//print_r($imageUrls);
 
 $iter = 0;
 foreach ($files as $value) {
     $strToAdd .= "<img src=\"$value\" ";
 	if (!empty($imageUrls[$iter])){
-		$strToAdd .= "url=\"".$imageUrls[$iter]."\"";
+		$strToAdd .= "link=\"".$imageUrls[$iter]."\"";
 	}
 	$iter++;
 	$strToAdd .="/>
