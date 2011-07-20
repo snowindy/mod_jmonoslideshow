@@ -40,9 +40,9 @@
 	            <option value="right">Right</option>
 	        </field>
 			
-			<field name="imageFolder" type="text" default="images/stories/monoslideshow" label="Images folder" description=""/>
+			<field name="imageFolder" type="text" default="images/stories/jmonoslideshow" label="Images folder" description=""/>
 	        
-	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow/. If does not exist - default is used from " description=""/>
+	        <field name="configXmlName" type"text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/jmonoslideshow/. If does not exist - default is used from /modules/mod_jmonoslideshow/default_config.xml" description=""/>
 	  	
 	    </fieldset>
 	    <fieldset name="Advanced" label="Advanced Parameters">

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<slideshow>
+	
+	<preferences
+		kenBurnsMode = "random"
+	/>
+
+        <album  showControls="false"  _IMAGE_PATH_INSERT_HERE_>
+_IMAGES_INSERT_HERE_
+        </album>
+
+	
+	
+</slideshow>

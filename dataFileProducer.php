@@ -39,7 +39,11 @@ foreach ($files as $value) {
 }
 $strToAdd .= '';
 
-$configPath = "../../media/monoslideshow/$configXML";
+$configPath = "../../media/jmonoslideshow/$configXML";
+
+if (!JFolder::exists(JPATH_COMPONENT . DS . $configXML)){
+	$configPath = "default_config.xml";		
+}
 
 $configContent = file_get_contents($configPath, true);
 
