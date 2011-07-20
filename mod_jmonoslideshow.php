@@ -1,10 +1,4 @@
 <?php
-/**
- * @version $Id$
- * @package    Jmonoslideshow
- * @author     Matthieu BARBE {@link ccomca.com}
- * @author     Created on 05-Sep-2009
- */
 
 //-- No direct access
 defined('_JEXEC') or die('=;)');

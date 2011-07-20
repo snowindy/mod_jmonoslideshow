@@ -1,44 +1,54 @@
-<install type="module" version="1.5.0" method="upgrade">
-    <name>Jmonoslideshow_v1</name>
-    <version>1.3</version>
-    <description>Jmonoslideshow Module v1.3.2</description>
-    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <author>Matthieu BARBE</author>
-    <authoremail>matthieu@ccomca.com</authoremail>
-    <authorurl>ccomca.com</authorurl>
-    <copyright>Copyright (C) 2005 - 2009 CCC All rights reserved.</copyright>
-    <creationDate>05-Oct-2009</creationDate>
-    <files>
-        <folder>assets</folder>
-        <folder>tmpl</folder>
-        <filename module="mod_jmonoslideshow">mod_jmonoslideshow.php</filename>
-    </files>
-    <languages folder="site/language">
-        <language tag="en-GB">en-GB/en-GB.mod_jmonoslideshow.ini</language>
-    </languages>
-    <params>
-        <param name="moduleclassSfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
-        
-		<param name="addSwfobject" type="radio" default="1" label="Add swfobject js lib" description="">
-            <option value="1">Yes</option>
-            <option value="0">No</option>
-        </param>
-		
-		<param name="divId" type="text" default="jmonoslideshow_v1" size="20" label="Div id name" description="Div id name description" />
-		
-		
-        <param name="flashWidth" type="text" default="800" size="2" label="Flash Width" description="Flash Dimension Description" />
-        <param name="flashHeight" type="text" default="250" size="2" label="Flash Height" description="Flash Dimension Description" />
-        
-		<param name="alignSlideshow" type="list" default="center" label="Align slideshow" description="">
-            <option value="center">Center</option>
-            <option value="left">Left</option>
-            <option value="right">Right</option>
-        </param>
-		
-		<param name="imageFolder" type="text" default="images/stories/monoslideshow_v1" label="Images folder" description=""/>
-        
-        <param name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow_v1." description=""/>
-		
-    </params>
-</install>
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade" client="site">
+	<name>JMonoslideshow</name>
+	<author>Eg</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>introdes.ru</copyright>
+	<license>GPL</license>
+	<authorEmail>contact@introdes.ru</authorEmail>
+	<authorUrl>introdes.ru</authorUrl>
+	<version>0.1</version>
+	<description>Monoslideshow joomla module</description>
+	<files>
+	  <filename module="mod_jmonoslideshow">mod_jmonoslideshow.php</filename>
+	  <filename>dataFileProducer.php</filename>
+	  <filename>index.html</filename>
+	  <folder>assets</folder>
+	  <folder>tmpl</folder>
+	  
+	</files>
+	<config>
+	  <fields name="params">
+	  	<fieldset name="basic" label="Module Parameters" description="Configure Module">
+	  		
+	  		<field name="moduleclassSfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	        
+			<field name="addSwfobject" type="radio" default="1" label="Add swfobject js lib" description="">
+	            <option value="1">Yes</option>
+	            <option value="0">No</option>
+	        </field>
+			
+			<field name="divId" type="text" default="jmonoslideshow" size="20" label="Div id name" description="Div id name description" />
+			
+			
+	        <field name="flashWidth" type="text" default="800" size="2" label="Flash Width" description="Flash Dimension Description" />
+	        <field name="flashHeight" type="text" default="250" size="2" label="Flash Height" description="Flash Dimension Description" />
+	        
+			<field name="alignSlideshow" type="list" default="center" label="Align slideshow" description="">
+	            <option value="center">Center</option>
+	            <option value="left">Left</option>
+	            <option value="right">Right</option>
+	        </field>
+			
+			<field name="imageFolder" type="text" default="images/stories/monoslideshow_v1" label="Images folder" description=""/>
+	        
+	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow_v1." description=""/>
+	  	
+	    </fieldset>
+	  </fields>
+	</config>
+	<languages>
+	  <language tag="en-GB">en-GB.my_module.ini</language>
+	  <language tag="en-US">en-US.my_module.ini</language>
+	</languages>
+</extension>
