@@ -1,22 +1,16 @@
 <?php
-/**
- * @version $Id$
- * @package    Jmonoslideshow
- * @author     Matthieu BARBE {@link ccomca.com}
- * @author     Created on 05-Sep-2009
- */
-//-- No direct access
+
 defined('_JEXEC') or die('=;)');
 
 if ($addSwfobject)
-    JHTML::script("swfobject.js", "modules/mod_jmonoslideshow_v1/assets/js/");
+    JHTML::script("swfobject.js", "modules/mod_jmonoslideshow/assets/js/");
 
 $classTxt = '';
 if (strlen($moduleclassSfx) != 0) {
     $classTxt = "class = \"$moduleclassSfx\"";
 }
 
-$dataFile = JURI::root(true) . '/modules/mod_jmonoslideshow_v1/dataFileProducer.php?reqParams=folder_EQUAL_' . $imageFolderEncoded . '_AND_confXmlName_EQUAL_' . $configXmlName;
+$dataFile = JURI::root(true) . '/modules/mod_jmonoslideshow/dataFileProducer.php?reqParams=folder_EQUAL_' . $imageFolderEncoded . '_AND_confXmlName_EQUAL_' . $configXmlName;
 ?>
 <script type="text/javascript">
     var flashvars = {};
@@ -25,7 +19,7 @@ $dataFile = JURI::root(true) . '/modules/mod_jmonoslideshow_v1/dataFileProducer.
     };
     var attributes = {wmode: "transparent"};
 
-    swfobject.embedSWF("<?php echo JURI::root(true) ?>/modules/mod_jmonoslideshow_v1/assets/swf/monoslideshow.swf",
+    swfobject.embedSWF("<?php echo JURI::root(true) ?>/modules/mod_jmonoslideshow/assets/swf/monoslideshow.swf",
     "<?php echo $divId ?>", "<?php echo $flashWidth ?>", "<?php echo $flashHeight ?>", "8", flashvars, params, attributes);
 
 </script>
@@ -36,12 +30,12 @@ $dataFile = JURI::root(true) . '/modules/mod_jmonoslideshow_v1/dataFileProducer.
             <object width="<?php echo $flashWidth ?>"
                     height="<?php echo $flashHeight ?>"
                 type="application/x-shockwave-flash"
-                data="<?php echo JURI::root(true); ?>/modules/mod_jmonoslideshow_v1/assets/swf/monoslideshow.swf"
+                data="<?php echo JURI::root(true); ?>/modules/mod_jmonoslideshow/assets/swf/monoslideshow.swf"
                 id="<?php echo $divId ?>_swf"
                 style="visibility: visible;">
             <param name="wmode" value="transparent">
             <param name="flashvars" value="dataFile=<?php echo $dataFile; ?>">
-            <param name="movie" value="<?php echo JURI::root(true); ?>/modules/mod_jmonoslideshow_v1/assets/swf/monoslideshow.swf"/>
+            <param name="movie" value="<?php echo JURI::root(true); ?>/modules/mod_jmonoslideshow/assets/swf/monoslideshow.swf"/>
         </object>
 
 <?php endif; ?>

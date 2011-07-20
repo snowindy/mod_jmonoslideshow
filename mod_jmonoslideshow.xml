@@ -21,7 +21,7 @@
 	  <fields name="params">
 	  	<fieldset name="basic" label="Module Parameters" description="Configure Module">
 	  		
-	  		<field name="moduleclassSfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	  		<field name="moduleclassSfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
 	        
 			<field name="addSwfobject" type="radio" default="1" label="Add swfobject js lib" description="">
 	            <option value="1">Yes</option>
