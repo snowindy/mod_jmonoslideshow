@@ -42,7 +42,7 @@ $strToAdd .= '';
 $configPath = "../../media/jmonoslideshow/$configXML";
 
 if (!JFolder::exists(JPATH_COMPONENT . DS . $configXML)){
-	$configPath = "./default_config/default_config.xml";		
+	$configPath = "./default_config/default_config.xml_";		
 }
 
 $configContent = file_get_contents($configPath, true);
