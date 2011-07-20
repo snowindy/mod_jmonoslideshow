@@ -31,8 +31,8 @@
 			<field name="divId" type="text" default="jmonoslideshow" size="20" label="Div id name" description="Div id name description" />
 			
 			
-	        <field name="flashWidth" type="text" default="800" size="2" label="Flash Width" description="Flash Dimension Description" />
-	        <field name="flashHeight" type="text" default="250" size="2" label="Flash Height" description="Flash Dimension Description" />
+	        <field name="flashWidth" type="text" default="800" size="2" label="Flash Width" description="Flash area width" />
+	        <field name="flashHeight" type="text" default="250" size="2" label="Flash Height" description="Flash area height" />
 	        
 			<field name="alignSlideshow" type="list" default="center" label="Align slideshow" description="">
 	            <option value="center">Center</option>
@@ -42,13 +42,9 @@
 			
 			<field name="imageFolder" type="text" default="images/stories/monoslideshow" label="Images folder" description=""/>
 	        
-	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow/" description=""/>
+	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow/. If does not exist - default is used from " description=""/>
 	  	
 	    </fieldset>
 	  </fields>
 	</config>
-	<languages>
-	  <language tag="en-GB">en-GB.my_module.ini</language>
-	  <language tag="en-US">en-US.my_module.ini</language>
-	</languages>
 </extension>
