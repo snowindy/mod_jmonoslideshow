@@ -24,7 +24,7 @@ $dataFile = JURI::root(true) . '/modules/mod_jmonoslideshow/dataFileProducer.php
 
 </script>
 <div align="<?php echo $alignSlideshow ?>">
-    <div  <?php echo $classTxt ?> class="monoslideshow_v1-cont" id="<?php echo $divId ?>">
+    <div  <?php echo $classTxt ?> class="monoslideshow-cont" id="<?php echo $divId ?>">
 
 <?php if (!$addSwfobject) : ?>
             <object width="<?php echo $flashWidth ?>"

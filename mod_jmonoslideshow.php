@@ -18,7 +18,7 @@ $moduleclassSfx = $params->get('moduleclassSfx', '');
 $flashWidth = $params->get('flashWidth', '600');
 $flashHeight = $params->get('flashHeight', '250');
 
-$divId = $params->get('divId', 'monoslideshow_v1');
+$divId = $params->get('divId', 'monoslideshow');
 
 $imageFolder = $params->get('imageFolder', 'no_folder');
 

@@ -40,9 +40,9 @@
 	            <option value="right">Right</option>
 	        </field>
 			
-			<field name="imageFolder" type="text" default="images/stories/monoslideshow_v1" label="Images folder" description=""/>
+			<field name="imageFolder" type="text" default="images/stories/monoslideshow" label="Images folder" description=""/>
 	        
-	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow_v1/" description=""/>
+	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/monoslideshow/" description=""/>
 	  	
 	    </fieldset>
 	  </fields>

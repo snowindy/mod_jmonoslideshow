@@ -39,7 +39,7 @@ foreach ($files as $value) {
 }
 $strToAdd .= '';
 
-$configPath = "../../media/monoslideshow_v1/$configXML";
+$configPath = "../../media/monoslideshow/$configXML";
 
 $configContent = file_get_contents($configPath, true);
 
