@@ -4,13 +4,14 @@ $reqParam = $_GET['reqParams'];
 
 $vars = split("_AND_", $reqParam);
 $folderArr = split('_EQUAL_', $vars[0]);
-$folder = $folderArr[1];
-
-$folder = str_replace('_SEPARATOR_', '/', $folder);
+$folder = base64_decode($folderArr[1]);
 
 $configXMLArr = split('_EQUAL_', $vars[1]);
 $configXML = $configXMLArr[1];
 
+$imageUrlArr = split('_EQUAL_', $vars[2]);
+$imageUrlsString = base64_decode($imageUrlArr[1]);
+$imageUrls = split('_SPR_', $imageUrlsString);
 
 $dir = "../../$folder";
 
@@ -33,15 +34,24 @@ $imagePathInsert = " imagePath=\"$dir\" ";
 
 $strToAdd = '';
 
+print_r($imageUrls);
+
+$iter = 0;
 foreach ($files as $value) {
-    $strToAdd .= "<img src=\"$value\" />
-    ";
+    $strToAdd .= "<img src=\"$value\" ";
+	if (!empty($imageUrls[$iter])){
+		$strToAdd .= "url=\"".$imageUrls[$iter]."\"";
+	}
+	$iter++;
+	$strToAdd .="/>
+	";
+	
 }
 $strToAdd .= '';
 
 $configPath = "../../media/jmonoslideshow/$configXML";
 
-if (!JFolder::exists(JPATH_COMPONENT . DS . $configXML)){
+if (!file_exists($configPath)){
 	$configPath = "./default_config/default_config.xml_";		
 }
 

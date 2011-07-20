@@ -10,7 +10,7 @@ if (strlen($moduleclassSfx) != 0) {
     $classTxt = "class = \"$moduleclassSfx\"";
 }
 
-$dataFile = JURI::root(true) . '/modules/mod_jmonoslideshow/dataFileProducer.php?reqParams=folder_EQUAL_' . $imageFolderEncoded . '_AND_confXmlName_EQUAL_' . $configXmlName;
+$dataFile = JURI::root(true) . '/modules/mod_jmonoslideshow/dataFileProducer.php?reqParams=folder_EQUAL_' . $imageFolderEncoded . '_AND_confXmlName_EQUAL_' . $configXmlName. '_AND_imageUrls_EQUAL_' . $imageUrlsEncoded;
 ?>
 <script type="text/javascript">
     var flashvars = {};

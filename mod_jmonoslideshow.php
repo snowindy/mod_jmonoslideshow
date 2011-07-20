@@ -22,10 +22,21 @@ $divId = $params->get('divId', 'monoslideshow');
 
 $imageFolder = $params->get('imageFolder', 'no_folder');
 
-$separator = "_SEPARATOR_";
-$imageFolderEncoded = str_replace("/", $separator, $imageFolder); 
+$listSep = "_SPR_";
+$imageFolderEncoded = base64_encode ( $imageFolder); 
 
 $configXmlName = $params->get('configXmlName', 'no_config');
+
+$imageUrlsString = "";
+$max = 10;
+for ($i = 1; $i <= 10; $i++) {
+	$imageUrlsString .= $params->get('imageUrl'.$i, '');
+	if ($max > $i){
+		$imageUrlsString .= $listSep;
+	}
+}
+
+$imageUrlsEncoded = base64_encode ($imageUrlsString );
 
 // include the template for display
 require(JModuleHelper::getLayoutPath('mod_jmonoslideshow'));

@@ -42,8 +42,18 @@
 			
 			<field name="imageFolder" type="text" default="images/stories/jmonoslideshow" label="Images folder" description=""/>
 	        
-	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/jmonoslideshow/. If does not exist - default is used from /modules/mod_jmonoslideshow/default_config/default_config.xml_" description="">
-	        </field>
+	        <field name="configXmlName" type="text" default="config.xml" label="Configuration file for slideshow" description="Must reside under /media/jmonoslideshow/. If does not exist - default is used from /modules/mod_jmonoslideshow/default_config/default_config.xml_"/>
+	        
+	        <field name="imageUrl1" type="text" default="" label="Image #1 URL" description=""/>
+	        <field name="imageUrl2" type="text" default="" label="Image #2 URL" description=""/>
+	        <field name="imageUrl3" type="text" default="" label="Image #3 URL" description=""/>
+	        <field name="imageUrl4" type="text" default="" label="Image #4 URL" description=""/>
+	        <field name="imageUrl5" type="text" default="" label="Image #5 URL" description=""/>
+	        <field name="imageUrl6" type="text" default="" label="Image #6 URL" description=""/>
+	        <field name="imageUrl7" type="text" default="" label="Image #7 URL" description=""/>
+	        <field name="imageUrl8" type="text" default="" label="Image #8 URL" description=""/>
+	        <field name="imageUrl9" type="text" default="" label="Image #9 URL" description=""/>
+	        <field name="imageUrl10" type="text" default="" label="Image #10 URL" description=""/>
 	  	
 	    </fieldset>
 	    <fieldset name="Advanced" label="Advanced Parameters">
