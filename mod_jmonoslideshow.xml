@@ -15,7 +15,7 @@
 	  <filename>index.html</filename>
 	  <folder>assets</folder>
 	  <folder>tmpl</folder>
-	  
+	  <folder>default_config</folder>
 	</files>
 	<config>
 	  <fields name="params">
@@ -42,7 +42,7 @@
 			
 			<field name="imageFolder" type="text" default="images/stories/jmonoslideshow" label="Images folder" description=""/>
 	        
-	        <field name="configXmlName" type"text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/jmonoslideshow/. If does not exist - default is used from /modules/mod_jmonoslideshow/default_config.xml" description=""/>
+	        <field name="configXmlName" type"text" default="config.xml" label="Configuration file for slideshow. Must reside under /media/jmonoslideshow/. If does not exist - default is used from /modules/mod_jmonoslideshow/default_config/default_config.xml" description=""/>
 	  	
 	    </fieldset>
 	    <fieldset name="Advanced" label="Advanced Parameters">
