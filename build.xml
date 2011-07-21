@@ -1,0 +1,23 @@
+<project name="JMonoslideshow" default="dist" basedir=".">
+    <description>
+        JMonoslideshow distribution builder
+    </description>
+	
+  <property name="dist"  location="dist"/>
+
+  <target name="init">
+    <mkdir dir="${dist}"/>
+  </target>
+
+  <target name="dist" depends="clean, init"
+        description="generate the distribution" >
+  	<zip destfile="${dist}/mod_jmonoslideshow.zip"
+  	       basedir="."
+  	       excludes="dist/**, .gitignore, build.xml, .project, .git/**"
+  	  />
+  </target>
+
+  <target name="clean" description="clean up" >
+    <delete dir="${dist}"/>
+  </target>
+</project>
