@@ -13,6 +13,10 @@ $imageUrlArr = split('_EQUAL_', $vars[2]);
 $imageUrlsString = base64_decode($imageUrlArr[1]);
 $imageUrls = split('_SPR_', $imageUrlsString);
 
+//Preventing configuration reading.
+$configXML = str_replace("..", "", $configXML);
+$configXML = str_replace("/", "", $configXML);
+
 $dir = "../../$folder";
 
 $files = array();
